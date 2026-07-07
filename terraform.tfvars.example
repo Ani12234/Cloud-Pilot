@@ -1,0 +1,18 @@
+# ==============================================================================
+# terraform.tfvars.example
+# ==============================================================================
+# This is an example variables file. Duplicate this file as 'terraform.tfvars'
+# to override variables locally. Do NOT commit the actual 'terraform.tfvars' to git.
+# ==============================================================================
+
+# The AWS Region where resources will be provisioned.
+aws_region = "ap-south-1"
+
+# The EC2 Instance type. Ensure it is Free-Tier eligible in your region.
+instance_type = "t2.micro"
+
+# The prefix of the S3 bucket. A random string will be appended to ensure uniqueness.
+bucket_name = "terraforge-bucket"
+
+# Tag applied to resources to identify ownership and group billing.
+project_name = "TerraForge"

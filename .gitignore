@@ -1,0 +1,16 @@
+# Local directory for Terraform plugins and cache
+.terraform/
+
+# Local lock files containing provider version constraints
+.terraform.lock.hcl
+
+# State files created during deployments
+*.tfstate
+*.tfstate.backup
+
+# Actual variables files that might contain local API secrets or settings
+*.tfvars
+
+# Log files
+*.log
+crash.log
