@@ -78,9 +78,9 @@ graph TD
 ## Deployed / Live Resources
 
 - **AWS Region**: `ap-south-1`
-- **EC2 Instance Public IP**: `3.109.201.83`
-- **React Web App URL**: [http://3.109.201.83](http://3.109.201.83)
-- **Grafana Monitoring URL**: [http://3.109.201.83:3000](http://3.109.201.83:3000) (User: `admin` | Password: `TerraForgeSecure2026!`)
+- **EC2 Instance Public IP**: `3.7.194.43` (Elastic IP, Static)
+- **React Web App URL**: [http://3.7.194.43](http://3.7.194.43)
+- **Grafana Monitoring URL**: [http://3.7.194.43:3000](http://3.7.194.43:3000) (User: `admin` | Password: `TerraForgeSecure2026!`)
 - **S3 Bucket Name**: `terraforge-bucket-34ec6698f98a`
 - **S3 Bucket ARN**: `arn:aws:s3:::terraforge-bucket-34ec6698f98a`
 - **IAM Role ARN**: `arn:aws:iam::381492135195:role/TerraForge-ec2-s3-role`
@@ -88,7 +88,7 @@ graph TD
 - **Deployment Date**: `2026-07-15`
 
 > [!NOTE]
-> The EC2 Public IP address is dynamic and will change if the instance is stopped and started. The live URL above is valid only while the instance is running. If you want to keep the IP static, we can attach an Elastic IP (EIP) via Terraform.
+> An Elastic IP (EIP) has been allocated and associated with the EC2 instance, so this public IP address is static and will not change when the instance is stopped or restarted.
 
 ---
 

@@ -120,3 +120,14 @@ resource "aws_instance" "web" {
     Project = var.project_name
   }
 }
+
+# Elastic IP allocation and association
+resource "aws_eip" "web_eip" {
+  instance = aws_instance.web.id
+  domain   = "vpc"
+
+  tags = {
+    Name    = "${var.project_name}-web-eip"
+    Project = var.project_name
+  }
+}
