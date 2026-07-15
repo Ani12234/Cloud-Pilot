@@ -21,7 +21,7 @@ output "grafana_url" {
 }
 
 output "ssh_command" {
-  value       = "ssh -i terraforge-key ec2-user@${aws_instance.web.public_ip}"
+  value       = "ssh -i terraforge-key-pem ec2-user@${aws_instance.web.public_ip}"
   description = "The SSH connection string for administrative cluster access."
 }
 

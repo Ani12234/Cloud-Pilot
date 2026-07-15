@@ -18,3 +18,5 @@ crash.log
 # Local SSH Keys
 terraforge-key
 terraforge-key.pub
+terraforge-key-pem
+terraforge-key-pem.pub

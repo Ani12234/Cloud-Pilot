@@ -79,7 +79,7 @@ resource "aws_security_group" "web_sg" {
 # SSH Key Pair associated with the EC2 instance.
 resource "aws_key_pair" "deployer" {
   key_name   = "${var.project_name}-deployer-key"
-  public_key = file("${path.module}/terraforge-key.pub")
+  public_key = file("${path.module}/terraforge-key-pem.pub")
 }
 
 # EC2 Instance: The virtual machine running our web server and Kubernetes cluster.
