@@ -1,4 +1,4 @@
-# TerraForge — AWS Infrastructure Automation
+# Cloud-pilot — AWS Infrastructure Automation
 
 TerraForge is a clean, secure, and Free-Tier compliant infrastructure-as-code (IaC) project designed to automate the provisioning of core AWS resources: an EC2 web server, a secure S3 storage bucket, and least-privilege IAM credentials linking the two.
 
