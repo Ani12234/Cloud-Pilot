@@ -47,6 +47,19 @@ subjects:
   name: prometheus
   namespace: monitoring
 ---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: prometheus-kubelet-admin
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: system:kubelet-api-admin
+subjects:
+- kind: ServiceAccount
+  name: prometheus
+  namespace: monitoring
+---
 apiVersion: v1
 kind: ConfigMap
 metadata:
