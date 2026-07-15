@@ -18,6 +18,16 @@ graph TD
     EC2 -- Read/Write --> S3[S3 Bucket: Versioning Enabled]
 ```
 
+---
+
+## Project Showcases (Interactive React Frontend)
+
+Here is the live user interface of the application, showing the dynamic transition between the themes:
+
+| **Ramayana Theme (Saffron)** | **Mahabharata Theme (Crimson)** |
+|:---:|:---:|
+| ![Ramayana Theme](images/ramayana.png) | ![Mahabharata Theme](images/mahabharata.png) |
+
 1. **VPC & Security Group**: The EC2 instance deploys in the default VPC. The security group permits SSH (port 22) and HTTP (port 80) access from the public internet (`0.0.0.0/0`), and blocks all other ports.
 2. **EC2 Web Server**: A single `t2.micro` running Amazon Linux 2023. A bootstrap `user_data` script updates packages, installs and enables Nginx, and overwrites the default home page to show a custom deployment message.
 3. **S3 Storage**: A private, version-controlled S3 bucket. All public access (ACLs and Policies) is explicitly blocked to enforce security best practices.
