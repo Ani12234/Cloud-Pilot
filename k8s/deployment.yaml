@@ -20,7 +20,7 @@ spec:
         image: ghcr.io/ani12234/terraforge-app:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 3000
+        - containerPort: 80
         env:
         - name: NODE_ENV
           value: "production"
