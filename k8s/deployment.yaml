@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: terraforge-app
+  namespace: default
+  labels:
+    app: terraforge-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: terraforge-app
+  template:
+    metadata:
+      labels:
+        app: terraforge-app
+    spec:
+      containers:
+      - name: terraforge-app
+        image: ghcr.io/ani12234/terraforge-app:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+        env:
+        - name: NODE_ENV
+          value: "production"
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "150m"
+          requests:
+            memory: "64Mi"
+            cpu: "50m"

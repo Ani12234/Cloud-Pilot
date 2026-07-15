@@ -1,0 +1,12 @@
+{
+  "name": "terraforge-app",
+  "version": "1.0.0",
+  "description": "Simple Express hello-world app for TerraForge cluster demonstration",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

@@ -12,7 +12,17 @@ output "ec2_public_ip" {
 
 output "site_url" {
   value       = "http://${aws_instance.web.public_ip}"
-  description = "The ready-to-click site URL hosting the Nginx page."
+  description = "The ready-to-click site URL hosting the custom Kubernetes application."
+}
+
+output "grafana_url" {
+  value       = "http://${aws_instance.web.public_ip}:3000"
+  description = "The Grafana dashboard connection URL."
+}
+
+output "ssh_command" {
+  value       = "ssh -i terraforge-key ec2-user@${aws_instance.web.public_ip}"
+  description = "The SSH connection string for administrative cluster access."
 }
 
 output "s3_bucket_name" {

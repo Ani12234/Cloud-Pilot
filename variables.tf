@@ -14,8 +14,8 @@ variable "aws_region" {
 
 variable "instance_type" {
   type        = string
-  description = "The EC2 instance type. t2.micro is Free-Tier eligible in most regions."
-  default     = "t2.micro"
+  description = "The EC2 instance type. t3.small provides sufficient memory for K3s and Prometheus."
+  default     = "t3.small"
 }
 
 variable "bucket_name" {
