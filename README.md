@@ -102,6 +102,16 @@ Here is the live user interface of the application, showing the dynamic transiti
 
 ---
 
+## Monitoring Showcases (Prometheus & Grafana)
+
+Prometheus collects cluster and container-level metrics (via cAdvisor), which are visualized inside Grafana:
+
+| **Grafana Home Panel** | **Explore Metrics (Container CPU)** |
+|:---:|:---:|
+| ![Grafana Welcome](images/grafana_welcome.png) | ![Grafana Explore](images/grafana_explore.png) |
+
+---
+
 ## Clean Up (Teardown)
 
 To remove all provisioned resources and avoid ongoing AWS costs:
