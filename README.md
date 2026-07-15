@@ -108,7 +108,7 @@ Prometheus collects cluster and container-level metrics (via cAdvisor), which ar
 
 | **Grafana Home Panel** | **Explore Metrics (Container CPU)** |
 |:---:|:---:|
-| ![Grafana Welcome](images/grafana_welcome.png) | ![Grafana Explore](images/grafana_explore.png) |
+| ![Grafana Welcome](images/grafana_welcome.png) | ![Grafana Explore](images/grafana_metrics_active.png) |
 
 ---
 
